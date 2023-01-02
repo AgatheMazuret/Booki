@@ -1,0 +1,155 @@
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: Raleway, Arial, sans-serif
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+}
+
+nav {
+    width: 100%;
+    text-align: end;
+}
+
+nav a {
+    padding: 30px 35px 0 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color:#0065FC;
+    border-top: #0065FC;
+}
+                    /* Logo de la page */
+#logoBooki {
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+                    /* Partie textes */
+h1 {
+    position: absolute;
+    left: 55px;
+    top: 126px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+p {
+    position: absolute;
+    left: 55px;
+    top: 160px;
+}
+
+h3 {
+    position: absolute;
+    top: 372px;
+    left: 60px;
+    width: 4px;
+    height: 10px;
+    border: 1px solid #df2e2e;
+    border-radius: 50%;
+}
+
+h4 {
+    position: absolute;
+    top: 373px;
+    left: 95px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+                 /* Formulaire de recherche */
+form {
+    position: absolute;
+    top: 222px;
+    left: 60px;
+}
+
+input {
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+}
+
+                /* Zone de filtres */
+h2 {
+    position: absolute;
+}
+
+.flex{
+    display: flex;
+}
+
+.lesfiltres {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    width: 54px;
+    height: 50px;
+    left: 62px;
+    top: 300px;
+}
+
+.item{
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    display: flex;
+    padding: 10px 15px 10px 15px;
+    margin-left: 85px;
+    white-space: nowrap;
+    
+}
+
+                /* Hébergements */
+.hebergements {
+    width: 880px;
+    height: 626px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    position: absolute;
+    top: 426px;
+    left: 30px;
+}
+
+                /* Les plus populaires */
+.lespopulaires {
+    width: 420px;
+    height: 625px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    position: absolute;
+    top: 426px;
+    left: 953px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
