@@ -4,13 +4,9 @@ body {
     font-family: Raleway, Arial, sans-serif
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    width: 94%;
-}
 
 nav {
+    padding-top: 33px;
     width: 100%;
     text-align: end;
 }
@@ -22,19 +18,21 @@ nav a {
 }
 
 nav a:hover {
-    color:#0065FC;
-    border-top: #0065FC;
+    color: #0065FC;
+    border-top: 2px solid #0065FC
 }
-                    /* Logo de la page */
+
+/* Logo de la page */
 #logoBooki {
     width: 100px;
-    position: absolute;
+
     top: 30px;
     left: 30px;
 }
-                    /* Partie textes */
+
+/* Partie textes */
 h1 {
-    position: absolute;
+
     left: 55px;
     top: 126px;
     font-weight: 700;
@@ -43,13 +41,11 @@ h1 {
 }
 
 p {
-    position: absolute;
     left: 55px;
     top: 160px;
 }
 
 h3 {
-    position: absolute;
     top: 372px;
     left: 60px;
     width: 4px;
@@ -59,7 +55,6 @@ h3 {
 }
 
 h4 {
-    position: absolute;
     top: 373px;
     left: 95px;
     font-weight: 400;
@@ -67,9 +62,8 @@ h4 {
     line-height: 19px;
 }
 
-                 /* Formulaire de recherche */
+/* Formulaire de recherche */
 form {
-    position: absolute;
     top: 222px;
     left: 60px;
 }
@@ -79,58 +73,85 @@ input {
     border-radius: 15px;
 }
 
-                /* Zone de filtres */
-h2 {
-    position: absolute;
-}
+/* Zone de filtres */
 
-.flex{
+
+.flex {
     display: flex;
 }
 
 .lesfiltres {
-    display: flex;
+    width: 65%;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
-    position: absolute;
-    width: 54px;
-    height: 50px;
-    left: 62px;
-    top: 300px;
+    align-items: baseline;
+    display: flex;
 }
 
-.item{
+.item {
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     display: flex;
     padding: 10px 15px 10px 15px;
-    margin-left: 85px;
     white-space: nowrap;
-    
+
 }
 
-                /* Hébergements */
+/* Hébergements */
 .hebergements {
     width: 880px;
     height: 626px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    position: absolute;
+
     top: 426px;
     left: 30px;
 }
 
-                /* Les plus populaires */
+/* Les plus populaires */
 .lespopulaires {
     width: 420px;
     height: 625px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    position: absolute;
+
     top: 426px;
     left: 953px;
 }
+
+
+
+
+
+.item>i {
+    color: #0065FC;
+    padding-right: 15px;
+
+}
+
+
+.item:hover {
+    background: #DEEBFF;
+}
+
+.toto {
+    display: flex;
+    align-items: baseline;
+}
+
+.titi{
+    margin: 2% 1% 2% 0;
+    background-color: white;
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
