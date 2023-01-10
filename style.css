@@ -144,12 +144,16 @@ button {
 
 /* Hébergements et Les plus populaires */
 
-.lesfonds {
+.grid-heb-pop {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .hebergements {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
     width: 880px;
     height: 626px;
     top: 426px;
@@ -157,9 +161,12 @@ button {
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-right: 50px;
+    margin-bottom: 50px;
 }
 
 .populaires {
+   display: flex;
+   flex-direction: column;
     width: 420px;
     height: 625px;
     top: 426px;
@@ -167,8 +174,6 @@ button {
     background-color: #F2F2F2;
     border-radius: 20px;
 }
-
-
 
 
 
