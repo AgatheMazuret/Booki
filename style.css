@@ -150,9 +150,11 @@ button {
 
                                  /* Hébergements */
 
+
+                                 
 .hebergements {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
     width: 880px;
@@ -166,18 +168,17 @@ button {
     
 }
 
-.marseille {
+h5 {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    margin: 30px 30px 30px 30px;
 }
 
 .canebiere, .port, .mouettes, .mer, .panier, .amina {
+    display: flex;
     width: 246px;
     height: 210px;
     background-color: #ffffff;
-    display: flex;
     border-radius: 20px;
     margin: 15px 15px 15px 15px;
 }
@@ -222,7 +223,7 @@ button {
     font-size: 22px;
     line-height: 26px;  
     margin-left: 33px;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .lesplus>i {
@@ -233,10 +234,10 @@ button {
 }
 
 .soleil, .coeur, .bleublanc {
+    display: flex;
     width: 343px;
     height: 144px;
     background-color: #ffffff;
-    display: flex;
     border-radius: 20px;
     margin: 20px 33px 20px 33px;
     box-shadow: ;
@@ -261,12 +262,42 @@ button {
     line-height: 16px;
 }
 
+                                /* Activités à Marseille */
 
+h6 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
 
+.activites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.vieuxport, .fort, .parc, .notredame {
+    display: flex;
+    width: 302px;
+    height: 445;
+    background-color: #FFFFFF;
+    border: #FFFFFF solid 0px;
+    border-radius: 20px;
+    box-shadow: #D9D9D9;
+}
 
+.img-activites {
+    width: 302px;
+    height: 400px;
+    border-radius: 20px 20px 0px 0px;
+}
 
-
+.card-header-activites {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
 
 
 
