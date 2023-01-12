@@ -148,6 +148,14 @@ button {
     display: flex;
 }
 
+.colorBlue {
+    color: #0065FC;
+}
+
+.colorGrey {
+    color: #D9D9D9;
+}
+
                                  /* Hébergements */
 
 
@@ -298,9 +306,6 @@ h6 {
     font-size: 16px;
     line-height: 19px;
 }
-
-
-
 
 
 
