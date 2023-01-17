@@ -1,5 +1,5 @@
 body {
-    max-width: 1440px;
+    max-width: 1400px;
     margin: 0 auto;
     font-family: Raleway, Arial, sans-serif;
 }
@@ -237,7 +237,6 @@ button {
     height: 670px;
     background-color: #F2F2F2;
     border-radius: 20px;
-
 }
 
 .lesplus {
@@ -326,6 +325,13 @@ button {
     box-shadow: 5px 6px 20px -5px rgba(97,96,96,0.71);
     -webkit-box-shadow: 5px 6px 20px -5px rgba(97,96,96,0.71);
     -moz-box-shadow: 5px 6px 20px -5px rgba(97,96,96,0.71);
+}
+
+@media screen and (width: 992px) {
+   .vieuxport, .fort, .parc, .notredame { 
+    width: 182px;
+    height: 267px;
+    }
 }
 
 .vieuxport:hover, .fort:hover, .parc:hover, .notredame:hover {
