@@ -327,13 +327,6 @@ button {
     -moz-box-shadow: 5px 6px 20px -5px rgba(97,96,96,0.71);
 }
 
-@media screen and (width: 992px) {
-   .vieuxport, .fort, .parc, .notredame { 
-    width: 182px;
-    height: 267px;
-    }
-}
-
 .vieuxport:hover, .fort:hover, .parc:hover, .notredame:hover {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
@@ -377,3 +370,27 @@ footer {
 .txtFooter {
     font-size: 16px;
 }
+
+@media all and (min-width: 992px) and (max-width: 768px) {
+
+    .hebergementsFond {
+        width: 100%;
+    }
+
+    .populaires {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .soleil, .coeur, .bleublanc {
+        width: 252px;
+        height: 144px;
+    }
+    
+    .vieuxport, .fort, .parc, .notredame { 
+     width: 182px;
+     height: 267px;
+     }
+ }
