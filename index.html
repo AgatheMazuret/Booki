@@ -19,7 +19,10 @@
 
 <body>
     <header>
-        <nav><a href="#hebergement">Hébergements</a> <a href="#activites">Actvités</a></nav>
+        <nav>
+            <a href="#hebergement">Hébergements</a>
+            <a href="#activites">Actvités</a>
+        </nav>
 
         <img src="images/logo/booki-small.png" alt="Logo Booki" id="logoBooki" />
 
@@ -27,12 +30,11 @@
         <p>En plein centre-ville ou en pleine nature</p>
 
         <form>
-            <form action="" method="get">
-                <label for="localisation"><i class="fa-solid fa-location-dot"></i></label>
-                <input type="text" name="localisation" id="localisation" placeholder="Marseille, France" />
-                <button type="submit">Rechercher</button>
-            </form>
+            <label for="localisation"><i class="fa-solid fa-location-dot"></i></label>
+            <input type="text" name="localisation" id="localisation" placeholder="Marseille, France" />
+            <button type="submit">Rechercher</button>
         </form>
+
         <div class="lesFiltres">
             <h3>Filtres</h3>
             <div class="item">
@@ -46,13 +48,14 @@
     <main>
         <div class="loc">
             <div class="info"><i class="fa-solid fa-info"></i></div>
-            <h1 class="txtI">Plus de 500 logements sont disponibles dans cette ville</h1>
+            <h1 class="txtI">
+                Plus de 500 logements sont disponibles dans cette ville
+            </h1>
         </div>
 
         <div class="grid-heb-pop">
             <div class="hebergementsFond">
-                <h1 class="titreHeb" id="hebergements">Hébergements à Marseille
-                </h1>
+                <div class="titreHeb">Hébergements à Marseille</div>
                 <div class="cardsHeb">
                     <div class="canebiere">
                         <img class="img-card-heb" src="images/hebergements/4_small/auberge-la-canebiere-small.jpg"
@@ -145,137 +148,111 @@
                         </div>
                     </div>
                 </div>
-                <div class="afficherPlus">
-                    Afficher plus
-                </div>
+                <div class="afficherPlus">Afficher plus</div>
             </div>
             <div class="populaires">
                 <div class="lesplus">
                     Les plus populaires <i class="fa-solid fa-chart-line"></i>
                 </div>
-                <div class="soleil">
-                    <img class="img-card-pop" src="images/hebergements/4_small/hotel-le-soleil-du-matin-small.jpg"
-                        alt="Hôtel Le soleil du matin" />
-                    <div class="card-content-pop">
-                        <h1 class="card-header-pop">Hôtel Le soleil du matin</h1>
-                        <p class="card-text-pop">Nuit à partir de 128€</p>
-                        <div class="etoilesPop">
-                            <p class="bluestar-icon">
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorGrey"></i>
-                            </p>
+                <div class="cardsPop">
+                    <div class="soleil">
+                        <img class="img-card-pop" src="images/hebergements/4_small/hotel-le-soleil-du-matin-small.jpg"
+                            alt="Hôtel Le soleil du matin" />
+                        <div class="card-content-pop">
+                            <h1 class="card-header-pop">Hôtel Le soleil du matin</h1>
+                            <p class="card-text-pop">Nuit à partir de 128€</p>
+                            <div class="etoilesPop">
+                                <p class="bluestar-icon">
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorGrey"></i>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="coeur">
-                    <img class="img-card-pop" src="images/hebergements/4_small/chambre-hotes-au-coeur-de-eau-small.jpg"
-                        alt="Chambres d’hôtes Au cœur de l’eau" />
-                    <div class="card-content-pop">
-                        <h1 class="card-header-pop">Chambres d’hôtes Au cœur de l’eau</h1>
-                        <p class="card-text-pop">Nuit à partir de 71€</p>
-                        <div class="etoilesPop2">
-                            <p class="bluestar-icon">
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorGrey"></i>
-                            </p>
+                    <div class="coeur">
+                        <img class="img-card-pop"
+                            src="images/hebergements/4_small/chambre-hotes-au-coeur-de-eau-small.jpg"
+                            alt="Chambres d’hôtes Au cœur de l’eau" />
+                        <div class="card-content-pop">
+                            <h1 class="card-header-pop">Chambres d’hôtes Au cœur de l’eau</h1>
+                            <p class="card-text-pop">Nuit à partir de 71€</p>
+                            <div class="etoilesPop2">
+                                <p class="bluestar-icon">
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorGrey"></i>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="bleublanc">
-                    <img class="img-card-pop" src="images/hebergements/4_small/hotel-bleu-et-blanc-small.jpg"
-                        alt="Hôtel Bleu et Blanc" />
-                    <div class="card-content-pop">
-                        <h1 class="card-header-pop">Hôtel Bleu et Blanc</h1>
-                        <p class="card-text-pop">Nuit à partir de 68€</p>
-                        <div class="etoilesPop">
-                            <p class="bluestar-icon">
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorGrey"></i>
-                            </p>
+                    <div class="bleublanc">
+                        <img class="img-card-pop" src="images/hebergements/4_small/hotel-bleu-et-blanc-small.jpg"
+                            alt="Hôtel Bleu et Blanc" />
+                        <div class="card-content-pop">
+                            <h1 class="card-header-pop">Hôtel Bleu et Blanc</h1>
+                            <p class="card-text-pop">Nuit à partir de 68€</p>
+                            <div class="etoilesPop">
+                                <p class="bluestar-icon">
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorGrey"></i>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <h1 class="titreActivites" id="activites">Activités à Marseille</h1>
-
         <div class="activites">
+            <h1 class="titreActivites" id="activites">Activités à Marseille</h1>
+
+
             <div class="vieuxport">
-                <img class="img-activites" src="images/activites/3_medium/vieux-port-medium.jpg" alt="Vieux-Port" />
-                <div class="card-header-activites">
-                    Vieux-Port
-                </div>
+                <img class="img-activites" src="images/activites/3_medium/vieux-port-medium.jpg" alt="Vieux-Port" >
+                <div class="card-header-activites">Vieux-Port</div>
             </div>
             <div class="fort">
-                <img class="img-activites" src="images/activites/1_xlarge/fort-de-pomegues-xlarge.jpg"
-                    alt="Fort de Pomègues" />
-                <div class="card-header-activites">
-                    Fort de Pomègues
-                </div>
+                <img class="img-activites" src="images/activites/3_medium/fort-de-pomegues-medium.jpg"
+                    alt="Fort de Pomègues" >
+                <div class="card-header-activites">Fort de Pomègues</div>
             </div>
             <div class="parc">
                 <img class="img-activites" src="images/activites/3_medium/parc-national-des-calanques-medium.jpg"
-                    alt="Parc national des Calanques" />
-                <div class="card-header-activites">
-                    Parc national des Calanques
-                </div>
+                    alt="Parc national des Calanques" >
+                <div class="card-header-activites">Parc national des Calanques</div>
             </div>
             <div class="notredame">
                 <img class="img-activites" src="images/activites/3_medium/notre-dame-de-la-garde-medium.jpg"
-                    alt="Notre-Dame-de-la-Garde" />
-                <div class="card-header-activites">
-                    Notre-Dame-de-la-Garde
-                </div>
+                    alt="Notre-Dame-de-la-Garde" >
+                <div class="card-header-activites">Notre-Dame-de-la-Garde</div>
             </div>
         </div>
     </main>
     <footer>
         <div class="aPropos">
-            <h1 class="titreFooter">
-                À propos
-            </h1>
-            <p class="txtFooter">
-                Fonctionnement du site
-            </p>
-            <p class="txtFooter">
-                Conditions générales
-            </p>
-            <p class="txtFooter">
-                Données et confidentialité
-            </p>
+            <h1 class="titreFooter">À propos</h1>
+            <p class="txtFooter">Fonctionnement du site</p>
+            <p class="txtFooter">Conditions générales</p>
+            <p class="txtFooter">Données et confidentialité</p>
         </div>
         <div class="nosHebergements">
-            <h1 class="titreFooter">
-                Nos Hébergements
-            </h1>
-            <p class="txtFooter">
-                Charte qualité
-            </p>
-            <p class="txtFooter">
-                Proposer votre hôtel
-            </p>
+            <h1 class="titreFooter">Nos Hébergements</h1>
+            <p class="txtFooter">Charte qualité</p>
+            <p class="txtFooter">Proposer votre hôtel</p>
         </div>
         <div class="assistance">
-            <h1 class="titreFooter">
-                Assistance
-            </h1>
-            <p class="txtFooter">
-                Centre d’aide
-            </p>
-            <p class="txtFooter">
-                Nous contacter
-            </p>
+            <h1 class="titreFooter">Assistance</h1>
+            <p class="txtFooter">Centre d’aide</p>
+            <p class="txtFooter">Nous contacter</p>
         </div>
+
     </footer>
 </body>
 
