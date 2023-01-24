@@ -4,9 +4,15 @@ body {
   font-family: Raleway, Arial, sans-serif;
 }
 
+                            /* Logo de la page et Nav */
+
+.headerLogo {
+  display: flex;
+  margin: 35px 0 70px 0;
+}
+
 nav {
-  padding-top: 33px;
-  width: 100%;
+  width: 40%;
   text-align: end;
 }
 
@@ -22,16 +28,16 @@ nav a:hover {
   border-top: 2px solid #0065fc;
 }
 
-/* Logo de la page */
+.logoBooki {
+  width: 60%;
+}
+
 #logoBooki {
   width: 61px;
   height: 19px;
-  top: 30px;
-  left: 30px;
-  margin-bottom: 50px;
 }
 
-/* Partie textes */
+                              /* Partie textes */
 
 p {
   font-weight: 700;
@@ -44,7 +50,7 @@ p {
   line-height: 19px;
 }
 
-/* Formulaire de recherche */
+                            /* Formulaire de recherche */
 
 form {
   margin: 20px 0 45px 0;
@@ -76,7 +82,7 @@ button {
   margin-left: -4px;
 }
 
-/* Zone de filtres */
+                                  /* Zone de filtres */
 
 .lesFiltres {
   width: 100%;
@@ -110,7 +116,7 @@ button {
   align-items: baseline;
 }
 
-/* Partie Info */
+                                  /* Partie Info */
 
 .info {
   margin: 35px 10px 35px 0;
@@ -124,12 +130,12 @@ button {
   align-items: center;
 }
 
-/* Hébergements et Les plus populaires */
+                      /* Hébergements et Les plus populaires */
 
 .grid-heb-pop {
   display: flex;
   width: 100%;
-  gap: 5%;
+  gap: 3%;
 }
 
 .colorBlue {
@@ -140,7 +146,7 @@ button {
   color: #d9d9d9;
 }
 
-/* Hébergements */
+                                  /* Hébergements */
 
 .hebergementsFond {
   width: 65%;
@@ -171,7 +177,7 @@ button {
 .panier,
 .amina {
   width: 256px;
-  height: 220px;
+  height: 200px;
   background-color: #ffffff;
   border-radius: 20px;
   margin: 15px 15px 15px 9px;
@@ -204,7 +210,7 @@ button {
   font-size: 16px;
   line-height: 20px;
   width: 100%;
-  margin: 0 0 15px 15px;
+  margin: 0 0 10px 15px;
 }
 
 .card-text-heb {
@@ -216,7 +222,7 @@ button {
 }
 
 .etoileHeb {
-  margin: 28px 0 0 15px;
+  margin: 18px 0 0 15px;
 }
 
 .afficherPlus {
@@ -226,7 +232,7 @@ button {
   width: 100%;
 }
 
-/* Les plus populaires */
+                                  /* Les plus populaires */
 
 .populaires {
   display: flex;
@@ -238,9 +244,9 @@ button {
 }
 
 .cardsPop {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
 }
 
 .lesplus {
@@ -248,7 +254,7 @@ button {
   font-weight: 700;
   font-size: 22px;
   width: 90%;
-  margin: 40px 0 0 25px;
+  margin: 40px 0 -90px 25px;
 }
 
 .lesplus > i {
@@ -290,13 +296,13 @@ button {
 .card-header-pop {
   font-size: 16px;
   line-height: 19px;
-  margin: 15px 0 25px 10px;
+  margin: 15px 0 25px 6px;
 }
 
 .card-text-pop {
   font-weight: 700;
   font-size: 14px;
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
 .etoilesPop {
@@ -304,15 +310,16 @@ button {
   justify-content: end;
 }
 
-/* Activités à Marseille */
+                              /* Activités à Marseille */
 
 .activites {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   margin-top: 50px;
+  gap: 3%;
 }
 
 .titreActivites {
@@ -320,7 +327,7 @@ button {
   display: flex;
   width: 100%;
   font-size: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .vieuxport,
@@ -331,6 +338,7 @@ button {
   flex-direction: column;
   width: 302px;
   height: 445px;
+  margin-top: 15px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 5px 6px 20px -5px rgba(97, 96, 96, 0.71);
@@ -348,7 +356,7 @@ button {
 }
 
 .img-activites {
-  width: 100%;
+  width: 302px;
   height: 390px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
@@ -369,12 +377,13 @@ footer {
   height: 70%;
   background-color: #d9d9d9;
   margin-top: 61px;
+  gap: 10%;
 }
 
 .aPropos,
 .nosHebergements,
 .assistance {
-  margin: 20px 160px 58px 70px;
+  margin: 25px 0 30px 45px;
 }
 
 .titreFooter {
@@ -386,22 +395,30 @@ footer {
   font-size: 16px;
 }
 
+                            /* Version tablette */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
+                            /* Les filtres tablette */
 
   .lesFiltres {
     gap: 1%;
   }
-  
+
+                          /* Hébergement tablette */
+
   .grid-heb-pop {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
-    .hebergementsFond {
+  .hebergementsFond {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
+
+                          /* Les plus populaires tablette */
 
   .populaires {
     display: flex;
@@ -415,29 +432,41 @@ footer {
     margin: 20px 0 20px 0;
   }
 
-  .lesplus>i {
-    width: 70%;
+  .lesplus > i {
+    width: 75%;
   }
 
   .cardsPop {
+    display: flex;
     flex-direction: row;
-    gap: 2%;
     width: 100%;
+    margin-bottom: 40px;
   }
 
   .soleil,
   .coeur,
   .bleublanc {
-    width: 260px;
+    width: 256px;
     height: 144px;
   }
 
-  .card-header-pop>h1 {
-    font-size: 14px;
+  .card-header-pop > h1 {
+    font-size: 12px;
   }
-  .card-header-pop>p {
-    font-size: 13px;
+  .card-header-pop > p {
+    font-size: 11px;
   }
+
+  .img-card-pop {
+    width: 106px;
+    height: 134px;
+  }
+
+  .etoilesPop {
+    margin: 45px 30px 0 0;
+  }
+
+                            /* Activités à Marseille Tablette */
 
   .vieuxport,
   .fort,
@@ -447,13 +476,113 @@ footer {
     height: 266px;
   }
 
-  .img-card-pop {
-  width: 106px;
-  height: 134px;
+  .activites {
+    justify-content: space-evenly;
+  }
+
+  .img-activites {
+    width: 182px;
+    height: 211px;
+  }
+
+  .card-header-activites {
+    font-size: 15px;
+    margin: 16px 0 0 20px;
+  }
 }
 
+                                /* Version téléphone */
+
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  h2 {
-    color: yellow;
+  
+                                /* Header téléphone */
+
+  nav {
+    width: 100%;
+  }
+
+  .headerLogo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 35px 0 70px 0;
+  }
+
+                                /* Les plus populaires Téléphone */
+
+  .grid-heb-pop {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .lesplus {
+    width: 100%;
+  }
+
+  .cardsPop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+  }
+
+  .soleil,
+  .coeur,
+  .bleublanc {
+    width: 262px;
+    height: 144px;
+  }
+
+  .img-card-pop {
+    width: 137px;
+    height: 134px;
+  }
+
+  .card-header-pop {
+    font-size: 16px;
+  }
+
+  .card-text-pop {
+    font-size: 14px;
+  }
+
+                            /* Hébergements à Marseille téléphone */
+
+  .hebergementsFond {
+    background-color: #ffffff;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .canebiere,
+  .port,
+  .mouettes,
+  .mer,
+  .panier,
+  .amina {
+    width: 335px;
+    height: 218px;
+  }
+
+  .img-card-heb {
+    width: 325px;
+    height: 124px;
+  }
+
+  .card-header-heb {
+    font-size: 16px;
+  }
+  .card-text-heb {
+    font-size: 14px;
   }
 }
