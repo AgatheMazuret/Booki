@@ -149,7 +149,7 @@ button {
                                   /* Hébergements */
 
 .hebergementsFond {
-  width: 65%;
+  width: 70%;
   background-color: #f2f2f2;
   border-radius: 20px;
 }
@@ -168,15 +168,11 @@ button {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  width: 100%;
 }
 
-.canebiere,
-.port,
-.mouettes,
-.mer,
-.panier,
-.amina {
-  width: 256px;
+.cards1 {
+  width: 30%;
   height: 200px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -186,19 +182,14 @@ button {
   -moz-box-shadow: 5px 6px 20px -5px rgba(97, 96, 96, 0.71);
 }
 
-.canebiere:hover,
-.port:hover,
-.mouettes:hover,
-.mer:hover,
-.panier:hover,
-.amina:hover {
+.cards1:hover {
   -ms-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
 .img-card-heb {
-  width: 246px;
+  width: 96%;
   height: 120px;
   border: 5px solid #ffffff;
   border-radius: 20px 20px 0px 0px;
@@ -238,22 +229,24 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 28%;
+  width: 30%;
   background-color: #f2f2f2;
   border-radius: 25px;
 }
 
 .cardsPop {
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
   display: flex;
+  margin-left: 25px;
+  gap: 5%;
 }
 
 .lesplus {
   display: flex;
   font-weight: 700;
   font-size: 22px;
-  width: 90%;
+  width: 100%;
   margin: 40px 0 -90px 25px;
 }
 
@@ -264,11 +257,9 @@ button {
   width: 30%;
 }
 
-.soleil,
-.coeur,
-.bleublanc {
+.cards2 {
   display: flex;
-  width: 343px;
+  width: 93%;
   height: 144px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -277,12 +268,14 @@ button {
   -moz-box-shadow: 5px 6px 20px -5px rgba(97, 96, 96, 0.71);
 }
 
-.soleil:hover,
-.coeur:hover,
-.bleublanc:hover {
+.cards2:hover {
   -ms-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+.card-content-pop {
+  width: 60%;
 }
 
 .img-card-pop {
@@ -315,11 +308,11 @@ button {
 .activites {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: flex-start;
   width: 100%;
   margin-top: 50px;
-  gap: 3%;
+  
 }
 
 .titreActivites {
@@ -327,16 +320,13 @@ button {
   display: flex;
   width: 100%;
   font-size: 22px;
-  margin-bottom: 15px;
+  margin: 0 0 15px 40px;
 }
 
-.vieuxport,
-.fort,
-.parc,
-.notredame {
+.cards3 {
   display: flex;
   flex-direction: column;
-  width: 302px;
+  width: 23%;
   height: 445px;
   margin-top: 15px;
   background-color: #ffffff;
@@ -346,17 +336,14 @@ button {
   -moz-box-shadow: 5px 6px 20px -5px rgba(97, 96, 96, 0.71);
 }
 
-.vieuxport:hover,
-.fort:hover,
-.parc:hover,
-.notredame:hover {
+.cards3:hover {
   -ms-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
 
 .img-activites {
-  width: 302px;
+  width: 100%;
   height: 390px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
@@ -380,9 +367,7 @@ footer {
   gap: 10%;
 }
 
-.aPropos,
-.nosHebergements,
-.assistance {
+.colonneFooter {
   margin: 25px 0 30px 45px;
 }
 
@@ -398,6 +383,10 @@ footer {
                             /* Version tablette */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
+  body {
+    margin: 0 15px 0 15px;
+  }
 
                             /* Les filtres tablette */
 
@@ -435,21 +424,7 @@ footer {
   .lesplus > i {
     width: 75%;
   }
-
-  .cardsPop {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-bottom: 40px;
-  }
-
-  .soleil,
-  .coeur,
-  .bleublanc {
-    width: 256px;
-    height: 144px;
-  }
-
+  
   .card-header-pop > h1 {
     font-size: 12px;
   }
@@ -468,21 +443,12 @@ footer {
 
                             /* Activités à Marseille Tablette */
 
-  .vieuxport,
-  .fort,
-  .parc,
-  .notredame {
-    width: 182px;
-    height: 266px;
-  }
-
-  .activites {
-    justify-content: space-evenly;
+  .cards3 {
+   
   }
 
   .img-activites {
-    width: 182px;
-    height: 211px;
+   
   }
 
   .card-header-activites {
@@ -493,7 +459,7 @@ footer {
 
                                 /* Version téléphone */
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 230px) and (max-width: 767px) {
   
                                 /* Header téléphone */
 
@@ -554,9 +520,7 @@ footer {
     margin: 20px 0 30px 0;
   }
 
-  .soleil,
-  .coeur,
-  .bleublanc {
+  .cards2 {
     width: 334px;
     height: 144px;
     margin-top: 15px;
@@ -583,12 +547,7 @@ footer {
     width: 100%;
   }
 
-  .canebiere,
-  .port,
-  .mouettes,
-  .mer,
-  .panier,
-  .amina {
+  .cards1 {
     width: 335px;
     height: 218px;
   }
@@ -621,10 +580,7 @@ footer {
     margin-left: 30px;
   }
 
-  .vieuxport,
-  .fort,
-  .parc,
-  .notredame {
+  .cards3 {
   width: 334px;
   height: 190px;
   margin-top: 15px;
