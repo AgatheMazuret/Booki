@@ -25,7 +25,7 @@
             </div>
 
             <nav>
-                <a href="#hebergement">Hébergements</a>
+                <a href="#hebergements">Hébergements</a>
                 <a href="#activites">Actvités</a>
             </nav>
         </div>
@@ -36,7 +36,9 @@
         <form>
             <label for="localisation"><i class="fa-solid fa-location-dot"></i></label>
             <input type="text" name="localisation" id="localisation" placeholder="Marseille, France" />
-            <button type="submit">Rechercher</button>
+            <button type="submit">
+                <div class="rechercher">Rechercher</div> <i class="fa-solid fa-magnifying-glass loupe"></i>
+            </button>
         </form>
 
         <div class="lesFiltres">
@@ -59,96 +61,108 @@
 
         <div class="grid-heb-pop">
             <div class="hebergementsFond">
-                <h2 class="titreHeb">Hébergements à Marseille</h2>
+                <h2 class="titreHeb" id="hebergements">Hébergements à Marseille</h2>
                 <div class="cardsHeb">
                     <div class="cards1">
                         <img class="img-card-heb" src="images/hebergements/4_small/auberge-la-canebiere-small.jpg"
                             alt="Auberge la Canebière" />
-                        <h2 class="card-header-heb">Auberge la Canebière</h2>
-                        <p class="card-text-heb">Nuit à partir de 25€</p>
-                        <div class="etoileHeb">
-                            <p class="bluestar-icon">
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorGrey"></i>
-                            </p>
+                        <div class="card-content-heb">
+                            <h2 class="card-header-heb">Auberge la Canebière</h2>
+                            <p class="card-text-heb">Nuit à partir de 25€</p>
+                            <div class="etoileHeb">
+                                <p class="bluestar-icon">
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorGrey"></i>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="cards1">
                         <img class="img-card-heb" src="images/hebergements/4_small/hotel-port-small.jpg"
                             alt="Hôtel du port" />
-                        <h2 class="card-header-heb">Hôtel du port</h2>
-                        <p class="card-text-heb">Nuit à partir de 52€</p>
-                        <div class="etoileHeb">
-                            <p class="bluestar-icon">
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorGrey"></i>
-                            </p>
+                        <div class="card-content-heb">
+                            <h2 class="card-header-heb">Hôtel du port</h2>
+                            <p class="card-text-heb">Nuit à partir de 52€</p>
+                            <div class="etoileHeb">
+                                <p class="bluestar-icon">
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorGrey"></i>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="cards1">
                         <img class="img-card-heb" src="images/hebergements/4_small/hotel-les-mouettes-small.jpg"
                             alt="Hôtel Les mouettes" />
-                        <h2 class="card-header-heb">Hôtel Les mouettes</h2>
-                        <p class="card-text-heb">Nuit à partir de 76€</p>
-                        <div class="etoileHeb">
-                            <p class="bluestar-icon">
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorGrey"></i>
-                            </p>
+                        <div class="card-content-heb">
+                            <h2 class="card-header-heb">Hôtel Les mouettes</h2>
+                            <p class="card-text-heb">Nuit à partir de 76€</p>
+                            <div class="etoileHeb">
+                                <p class="bluestar-icon">
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorGrey"></i>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="cards1">
                         <img class="img-card-heb" src="images/hebergements/4_small/hotel-de-la-mer-small.jpg"
                             alt="Hôtel de la mer" />
-                        <h2 class="card-header-heb">Hôtel de la mer</h2>
-                        <p class="card-text-heb">Nuit à partir de 46€</p>
-                        <div class="etoileHeb">
-                            <p class="bluestar-icon">
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorGrey"></i>
-                            </p>
+                        <div class="card-content-heb">
+                            <h2 class="card-header-heb">Hôtel de la mer</h2>
+                            <p class="card-text-heb">Nuit à partir de 46€</p>
+                            <div class="etoileHeb">
+                                <p class="bluestar-icon">
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorGrey"></i>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="cards1">
                         <img class="img-card-heb" src="images/hebergements/4_small/auberge-le-panier-small.jpg"
                             alt="Auberge Le Panier" />
-                        <h2 class="card-header-heb">Auberge Le Panier</h2>
-                        <p class="card-text-heb">Nuit à partir de 23€</p>
-                        <div class="etoileHeb">
-                            <p class="bluestar-icon">
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorGrey"></i>
-                            </p>
+                        <div class="card-content-heb">
+                            <h2 class="card-header-heb">Auberge Le Panier</h2>
+                            <p class="card-text-heb">Nuit à partir de 23€</p>
+                            <div class="etoileHeb">
+                                <p class="bluestar-icon">
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorGrey"></i>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="cards1">
                         <img class="img-card-heb" src="images/hebergements/4_small/hotel-chez-amina-small.jpg"
                             alt="Hôtel Chez Amina" />
-                        <h2 class="card-header-heb">Hôtel Chez Amina</h2>
-                        <p class="card-text-heb">Nuit à partir de 96€</p>
-                        <div class="etoileHeb">
-                            <p class="bluestar-icon">
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorBlue"></i>
-                                <i class="fa-solid fa-star colorGrey"></i>
-                            </p>
+                        <div class="card-content-heb">
+                            <h2 class="card-header-heb">Hôtel Chez Amina</h2>
+                            <p class="card-text-heb">Nuit à partir de 96€</p>
+                            <div class="etoileHeb">
+                                <p class="bluestar-icon">
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorBlue"></i>
+                                    <i class="fa-solid fa-star colorGrey"></i>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,7 +170,7 @@
             </div>
             <div class="populaires">
                 <div class="lesplus">
-                   <h2>Les plus populaires</h2> <i class="fa-solid fa-chart-line"></i>
+                    <h2>Les plus populaires</h2> <i class="fa-solid fa-chart-line"></i>
                 </div>
                 <div class="cardsPop">
                     <div class="cards2">

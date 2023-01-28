@@ -43,7 +43,7 @@ h1 {
   font-size: 22px;
 }
 
-p {
+header p {
   font-weight: 700;
   margin-top: -12px;
 }
@@ -84,6 +84,10 @@ button {
   color: #ffffff;
   font-weight: 700;
   margin-left: -4px;
+}
+
+.loupe {
+  display: none;
 }
 
                                   /* Zone de filtres */
@@ -180,7 +184,7 @@ button {
 
 .cards1 {
   width: 30%;
-  height: 200px;
+  height: 210px;
   background-color: #ffffff;
   border-radius: 20px;
   margin: 15px 15px 15px 9px;
@@ -197,32 +201,37 @@ button {
 
 .img-card-heb {
   width: 96%;
-  height: 120px;
+  height: 115px;
   border: 5px solid #ffffff;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
+.card-content-heb {
+  padding: 5px 0 5px 15px;
+}
+
 .card-header-heb {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
   width: 100%;
-  margin: 0 0 10px 15px;
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
 }
 
 .card-text-heb {
   font-weight: 700;
   font-size: 14px;
   width: 100%;
-  margin-left: 15px;
-  margin-top: -8px;
+  margin: 0;
 }
 
 .etoileHeb {
-  margin: 18px 0 0 15px;
+  margin-top: 10px;
 }
 
+.bluestar-icon {
+  margin: 0;
+}
 
 .afficherPlus {
   font-weight: 700;
@@ -253,6 +262,7 @@ button {
 .lesplus {
   display: flex;
   width: 100%;
+  height: 1%;
 }
 
 .lesplus h2 {
@@ -260,14 +270,14 @@ button {
   font-weight: 700;
   font-size: 22px;
   width: 85%;
-  margin: 40px 0 -90px 25px;
+  margin: 40px 0 0 25px;
 }
 
 .lesplus > i {
   color: #0065fc;
   display: flex;
   width: 15%;
-  margin: 40px 0 -90px 25px;
+  margin: 40px 0 0 25px;
 }
 
 .cards2 {
@@ -289,6 +299,7 @@ button {
 
 .card-content-pop {
   width: 60%;
+  padding: 0 0 10px 6px;
 }
 
 .img-card-pop {
@@ -301,19 +312,15 @@ button {
 
 .card-header-pop {
   font-size: 16px;
-  line-height: 19px;
-  margin: 15px 0 25px 6px;
 }
 
 .card-text-pop {
   font-weight: 700;
   font-size: 14px;
-  margin-left: 6px;
 }
 
 .etoilesPop {
   display: flex;
-  margin: 50px 0 20px 6px;
   
 }
 
@@ -340,7 +347,7 @@ button {
 .cards3 {
   display: flex;
   flex-direction: column;
-  width: 23%;
+  width: 22%;
   height: 445px;
   margin-top: 15px;
   background-color: #ffffff;
@@ -368,21 +375,21 @@ button {
   margin: 18px 0 10px 20px;
 }
 
-/* Footer */
+                                      /* Footer */
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
-  height: 70%;
+  height: 225px;
   background-color: #d9d9d9;
   margin-top: 61px;
   gap: 10%;
 }
 
 .colonneFooter {
-  margin: 25px 0 30px 45px;
+  margin: 25px 0 30px 70px;
 }
 
 .titreFooter {
@@ -392,6 +399,7 @@ footer {
 
 .txtFooter {
   font-size: 16px;
+  font-weight: 700;
 }
 
                             /* Version tablette */
@@ -413,10 +421,6 @@ footer {
   .grid-heb-pop {
     display: flex;
     flex-direction: column;
-  }
-
-  .hebergementsFond h2 {
-    margin-left: 40px;
   }
 
   .cardsHeb {
@@ -493,20 +497,30 @@ footer {
     font-size: 15px;
     margin: 16px 0 0 20px;
   }
+
+  footer {
+    gap: 0%;
+  }
+
 }
 
                                 /* Version téléphone */
 
-@media screen and (min-width: 230px) and (max-width: 767px) {
+@media screen and (min-width: 280px) and (max-width: 767px) {
   
                                 /* Header téléphone */
 
   nav {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   nav a {
+    display: flex;
+    justify-content: center;
     padding: 0 35px 20px 20px;
+    width: 50%;
   }
 
   nav a:hover {
@@ -519,18 +533,61 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 35px 0 70px 0;
+    margin: 35px 0 20px 0;
+  }
+
+  .logoBooki {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  h1 { 
+    font-size: 22px;
+    margin: 0 0 25px 10px;
+  }
+
+  header p,
+  form {
+    margin: 0 0 35px 10px;
+  }
+
+  .rechercher {
+    display: none;
+  }
+
+  .loupe {
+    display: block;
+  }
+
+  .loc {
+    margin-left: 10px;
   }
 
                                 /* Les filtres Téléphone */
 
+  .lesFiltres {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .lesFiltres h2 {
+    width: 100%;
+  }
+  
   .item {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
-    font-size: 11px;
+    width: 36%;
+    margin-bottom: 16px;
   }
+
+  .item i {
+    padding-right: 8px;
+  }
+
+
 
                                 /* Les plus populaires Téléphone */
 
@@ -541,6 +598,7 @@ footer {
 
   .populaires {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     border-radius: 0;
@@ -548,34 +606,23 @@ footer {
 
   .lesplus {
     width: 100%;
-    margin: 20px 0 0 25px;
+    margin-left: 20px;
   }
 
   .cardsPop {
     display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
     width: 100%;
-    height: 100%;
-    margin: 20px 0 30px 0;
+    margin: 35px 0 25px 40px;
+
   }
 
   .cards2 {
-    width: 334px;
-    height: 144px;
-    margin-top: 15px;
+    width: 80%;
+    margin-bottom: 20px;
   }
 
-  .img-card-pop {
-    width: 137px;
-    height: 134px;
-  }
-
-  .card-header-pop {
-    font-size: 16px;
-  }
-
-  .card-text-pop {
-    font-size: 14px;
-  }
 
                             /* Hébergements à Marseille téléphone */
 
@@ -597,9 +644,11 @@ footer {
 
   .card-header-heb {
     font-size: 16px;
+    padding-bottom: 3px;
   }
   .card-text-heb {
     font-size: 14px;
+    padding-bottom: 10px;
   }
 
   .afficherPlus {
@@ -635,6 +684,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
 }
 
 
