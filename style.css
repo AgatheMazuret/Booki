@@ -61,7 +61,7 @@ form {
 
 label {
   border: #f2f2f2 1px solid;
-  padding: 10px 10px 10px 15px;
+  padding: 10px 15px 10px 15px;
   background-color: #f2f2f2;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -100,21 +100,21 @@ button {
   display: flex;
 }
 .lesFiltres h2 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .item {
   border: 1px solid #d9d9d9;
   border-radius: 25px;
   display: flex;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 15px 10px 20px;
   white-space: nowrap;
   font-weight: 700;
 }
 
 .item > i {
   color: #0065fc;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 .item:hover {
@@ -409,7 +409,7 @@ footer {
 
 @media screen and (min-width: 767px) and (max-width: 992px) {
   body {
-    margin: 0 35px 0 15px;
+    margin: 0 25px 0 25px;
   }
 
                                                       /* Les filtres tablette */
@@ -474,7 +474,7 @@ footer {
   }
 
   .card-header-pop {
-    font-size: 15px;
+    font-size: 14px;
     margin: 14px 4px 10px 2px;
   }
   
@@ -484,12 +484,8 @@ footer {
   }
 
   .img-card-pop {
-    width: 106px;
+    width: 98px;
     height: 134px;
-  }
-
-  .etoilesPop {
-    margin: 0 10px 0 0;
   }
 
                                                       /* Activités à Marseille Tablette */
@@ -559,9 +555,19 @@ footer {
     margin: 0 0 25px 10px;
   }
 
-  header p,
-  form {
+  header p {
     margin: 0 0 35px 10px;
+  }
+
+  .form1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  input {
+    border: 1px solid #f2f2f2;
+    padding: 10px 45px 10px 0;
   }
 
   .rechercher {
@@ -592,6 +598,7 @@ footer {
     flex-direction: row;
     width: 36%;
     margin-bottom: 16px;
+    font-size: 11px;
   }
 
   .item i {
